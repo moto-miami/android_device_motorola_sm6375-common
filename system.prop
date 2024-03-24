@@ -44,9 +44,8 @@ ro.media.recorder-max-base-layer-fps=60
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
-# Radio VoNR Calling
-persist.radio.is_vonr_enabled_0=true
-persist.radio.is_vonr_enabled_1=true
+# Radio
+ro.telephony.default_network=33,33
 
 # RTT
 config.disable_rtt=true
