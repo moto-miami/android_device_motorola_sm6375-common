@@ -54,6 +54,7 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
 TARGET_KERNEL_SOURCE := kernel/motorola/sm6375
 BOARD_RAMDISK_USE_XZ := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -117,7 +118,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
-SYSTEM_EXT_MANIFEST_FILES += $(DEVICE_PATH)/configs/vintf/atcmdfwd-saidl.xml
+SYSTEM_EXT_MANIFEST_FILES += $(COMMON_PATH)/configs/vintf/atcmdfwd-saidl.xml
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
