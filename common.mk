@@ -220,9 +220,7 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/bin/*.sh),\
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # IPC router config
 PRODUCT_COPY_FILES += \
@@ -365,7 +363,6 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2 \
     vendor.qti.hardware.systemhelperaidl-V1-ndk \
     vendor.qti.hardware.systemhelperaidl-V1-ndk.vendor
 
