@@ -1,2 +1,5 @@
 # Audio
 audio.record.delay=180
+
+# App
+ro.launcher.blur.appLaunch=0
